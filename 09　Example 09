@@ -23,7 +23,6 @@ for n in range(1,10):
     #倍率改變(m,n迴圈之間)換行
     print("")
 print("")
-
 for n in range(1,10):
     for m in range(6,10):
         #單行顯示不分行，%2d:控制格式二位數
@@ -95,5 +94,4 @@ while True:
         break
     else:
         digit+=1
-
 print("%d/%d=%d"%(10**digit-1,number,(10**digit-1)/number))
