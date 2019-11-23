@@ -128,5 +128,5 @@ while i<len(prime_number):
 
 #輸出"x"連接格式，需將列表項轉為字串
 for j in range(len(prime_factorlist2)):
-     prime_factorlist2[j]=str(prime_factorlist2[j])
+    prime_factorlist2[j]=str(prime_factorlist2[j])
 print("%d="%(integer)+"x".join(prime_factorlist2))
