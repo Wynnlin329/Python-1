@@ -76,16 +76,16 @@ print("最小值: {%s:%d}"%(key_list[minimum],value_list[minimum]))
     Output:開一檔案路徑，將輸入字串轉為大寫後儲入文檔
 --------------------------------------------------------------------------------
 
-file=input("請輸入檔名:")
+fileName=input("請輸入檔名:")
 
 #開啟檔案，設定路徑與讀寫格式
-with open("C:/Users/USER/Desktop/%s.txt"%(file),"w") as w:
-    text=input("請輸入內容:")
-    #判別#為終止符，+\n控制文本換行
-    while "#" not in text: 
-        w.write(text.upper()+"\n")
-        text=input("請繼續輸入內容:")
- 　 w.close()
+file1=open("C:/Users/USER/Desktop/%s.txt"%(fileName),"w")
+text=input("請輸入內容:")
+while "#" not in text:
+    file1.write(text.upper()+"\n")
+    text=input("請繼續輸入內容:") 
+file1.close()
+
 
 --------------------------------------------------------------------------------
 (2) Input :使用者於兩檔案自由輸入各一行字符
